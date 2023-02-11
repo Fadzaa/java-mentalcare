@@ -12,10 +12,10 @@
         android:id="@+id/tvProfile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="Profile"
-        android:layout_marginTop="50dp"
         android:layout_marginLeft="36dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Profile user"
         android:textColor="@color/primaryColor"
         android:textSize="32sp" />
 
