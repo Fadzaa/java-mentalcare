@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.mental_care" >
+    package="com.example.mental_care">
 
     <application
         android:allowBackup="true"
@@ -12,7 +12,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Mental_care"
-        tools:targetApi="31" >
+        tools:targetApi="31">
+        <activity
+            android:name=".ViewPagerAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <!-- MAIN represents that it is the Main Activity-->
+                <action android:name="android.intent.action.MAIN" />
+                <!-- Launcher Denotes that it will be the first launching activity-->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".BlankScreen"
             android:exported="false" />
@@ -21,12 +34,10 @@
             android:exported="false" />
         <activity
             android:name=".Profile"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".RegisterForm"
-            android:exported="false" >
-
-        </activity>
+            android:exported="false" />
     </application>
 
 </manifest>
